@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,80 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  position: absolute;
+  top: 0;
+}
+.listContainer {
+  max-height: 65vh;
+  overflow-y: scroll;
+}
+.userContainer {
+  display: flex;
+  width: 30vw;
+  justify-content: space-around;
+  border: 3px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.userContainer:hover {
+  background-color: white;
+  color: black;
+}
+.icon {
+  margin-left: 20px;
+}
+.delete:hover {
+  color: red;
+}
+.edit:hover {
+  color: grey;
+}
+.addButton {
+  border: 3px solid white;
+  font-size: 80%;
+  padding: 10px;
+}
+.addButton:hover {
+  color: black;
+  background-color: white;
+}
+.addUserMiniForm {
+  position: absolute;
+  right: 10%;
+}
+.addTaskMiniForm {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  top:10%;
+  flex-direction: column;
+}
+input {
+  height: 30px;
+  text-align: "center";
+  margin-top: 5px;
+}
+select {
+  height: 30px;
+  margin-top: 5px;
+}
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 70%;
+}
+.buttonsCont {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+h3 {
+  margin-bottom: 10px;
+}
+.form {
+  display: "flex";
+  flex-direction: column;
+  justify-content: space-between;
 }
